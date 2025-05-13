@@ -10155,7 +10155,7 @@ ul.comment-list .th-comment-item:has(.children) .th-post-comment {
   font-size: 18px;
   font-weight: 600;
   max-width: 638px;
-  color: var(--title-color);
+  color: #fff;
   line-height: 1.555;
 }
 
@@ -10187,6 +10187,7 @@ ul.comment-list .th-comment-item:has(.children) .th-post-comment {
   }
 }
 
+/*judul paling atas*/
 @media (max-width: 1299px) {
   .hero-style3 {
     padding: 200px 0 150px;
@@ -10195,16 +10196,16 @@ ul.comment-list .th-comment-item:has(.children) .th-post-comment {
     font-size: 24px;
   }
   .hero-style3 .hero-title {
-    font-size: 70px;
+    font-size: 60px;
   }
 }
-
+/*judul paling atas*/
 @media (max-width: 1199px) {
   .hero-style3 {
     padding: 200px 0 250px;
   }
   .hero-style3 .hero-title {
-    font-size: 56px;
+    font-size: 46px;
   }
 }
 
