@@ -3149,6 +3149,7 @@ textarea.is-invalid {
   margin-top: -0.25em;
   text-transform: capitalize;
   font-weight: 800;
+  font-size: 38px;
 }
 
 .sub-title {
@@ -3254,6 +3255,8 @@ textarea.is-invalid {
   margin-bottom: calc(var(--section-title-space) - 12px);
   position: relative;
   z-index: 2;
+  margin-top: -67px;
+  margin-left: 30px;
 }
 
 .title-area .sec-title {
@@ -13816,6 +13819,14 @@ span.select2-selection.select2-selection--single:focus {
   margin-left: 140px;
   /* Medium Large devices */
   /* Large devices */
+}
+
+.about-wrap4 {
+  margin-top: -20px;
+}
+
+.about-wrap5 {
+  margin-top: 90px;
 }
 
 .about-wrap3 .about-feature-grid .box-title {
