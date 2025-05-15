@@ -325,14 +325,15 @@
         <div class="container">
           <div class="menu-area">
             <div class="header-logo">
-              <a href="index.html">
-                <img
-                  src="assets/image/logovegan.png"
-                  width="100"
-                  alt="Vegan Baby Logo"
-                />
-              </a>
-            </div>
+          <!-- Logo saat di Hero Area (awal halaman) -->
+          <a href="index.html" class="logo-hero">
+            <img src="assets/image/logovegan-2 white.png" width="100" alt="Vegan Baby Logo Hero" />
+          </a>
+          <!-- Logo saat scroll melewati Hero (di luar Hero) -->
+          <a href="index.html" class="logo-default d-none">
+            <img src="assets/image/logovegan.png" width="100" alt="Vegan Baby Logo Default" />
+          </a>
+        </div>
             <div class="menu-area-wrap compact-navbar">
               <nav class="main-menu d-none d-lg-block">
                 <ul>
@@ -1363,3 +1364,23 @@ Blog Area
     <script src="assets/js/main.js"></script>
   </body>
 </html>
+
+
+<script>
+  window.addEventListener("scroll", function () {
+    const scrollY = window.scrollY;
+    const heroHeight = document.getElementById("hero").offsetHeight;
+    const logoHero = document.querySelector(".logo-hero");
+    const logoDefault = document.querySelector(".logo-default");
+
+    if (scrollY > heroHeight - 80) {
+      // Scroll melewati hero → tampilkan logo default
+      logoHero.classList.add("d-none");
+      logoDefault.classList.remove("d-none");
+    } else {
+      // Masih di hero → tampilkan logo hero
+      logoHero.classList.remove("d-none");
+      logoDefault.classList.add("d-none");
+    }
+  });
+</script>
