@@ -3144,6 +3144,7 @@ textarea.is-invalid {
 }
 
 /*------------------- 3.3. Titles -------------------*/
+/*Crave-worthy noodles*/
 .sec-title {
   margin-bottom: calc(var(--section-title-space) - 11px);
   margin-top: -0.25em;
@@ -10199,7 +10200,7 @@ ul.comment-list .th-comment-item:has(.children) .th-post-comment {
     font-size: 24px;
   }
   .hero-style3 .hero-title {
-    font-size: 60px;
+    font-size: 48px;
   }
 }
 /*judul paling atas*/
@@ -10208,7 +10209,7 @@ ul.comment-list .th-comment-item:has(.children) .th-post-comment {
     padding: 200px 0 250px;
   }
   .hero-style3 .hero-title {
-    font-size: 46px;
+    font-size: 32px;
   }
 }
 
@@ -22899,5 +22900,63 @@ span.select2-selection.select2-selection--single:focus {
     margin-bottom: 20px;
   }
 }
+
+/* Produk */
+
+.custom-product-card {
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.custom-product-card:hover {
+  transform: translateY(-5px);
+}
+
+.custom-product-img {
+  width: 100%;
+  max-width: 220px;
+  height: auto;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 16px;
+  transition: transform 0.3s ease;
+}
+
+.team-img:hover .custom-product-img {
+  transform: scale(1.05); /* Efek zoom */
+}
+
+@media (max-width: 576px) {
+  .custom-product-img {
+    max-width: 50px;
+  }
+}
+
+.compact-navbar {
+  max-width: 500px;         /* atau berapa pun kamu suka */
+  margin-left: auto;
+  margin-right: auto;
+  transform: translateX(40px);  /* geser kanan 40px, bisa kamu ubah jadi 60, 80 dst */
+  background-color: #1c6b5a;
+  border-radius: 40px;
+  padding: 10px 20px;
+}
+
+.custom-static-image-wrapper {
+  display: flex;
+  justify-content: center;
+   padding: 0;          /* hapus padding atas bawah */
+  margin: 0;     
+}
+
+.custom-static-image {
+  width: 100%;       /* ukurannya diperkecil */
+  height: auto;
+  display: block;
+  border-radius: 10px; /* opsional: biar lebih halus */
+}
+
+
+
 
 /*# sourceMappingURL=style.css.map */
