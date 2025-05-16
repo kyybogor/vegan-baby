@@ -23014,5 +23014,20 @@ span.select2-selection.select2-selection--single:focus {
   }
 }
 
+.hero-title {
+  color: #fff;
+  font-family: "Windsor W01 Bold", sans-serif;
+  white-space: pre-wrap;
+  overflow: hidden;
+  width: fit-content;
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+
 
 /*# sourceMappingURL=style.css.map */

@@ -436,21 +436,8 @@ Hero Area
           <div class="col-lg-6">
             <div class="hero-style3">
               <span class="sub-title after-none">Vegan Noodles, Guilt-Free Goodness</span>
-              <h1 class="hero-title">
-                <span
-                  class="title1"
-                  style="color: #fff; font-family: Windsor W01 Bold"
-                  >Healthy Comfort</span
-                >
-                <span
-                  class="title2"
-                  style="color: #fff; font-family: Windsor W01 Bold"
-                  >in Every
-                  <span class="d-inline-block" style="color: #fff"
-                    >Slurp!..</span
-                  ></span
-                >
-              </h1>
+              <h1 class="hero-title" id="typewriter" data-text="Healthy Comfort\nin Every Slurp!.."></h1>
+
               <p class="hero-text">
                 "Satisfy Your Cravings with Vegan, Low-Calorie Noodles – No MSG,
                 Less Sodium!"
@@ -1016,3 +1003,61 @@ Blog Area
 
   setInterval(createSprinkle, 300); // sprinkle setiap 0.3 detik
 </script>
+
+<script>
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        } else {
+          entry.target.classList.remove('visible'); // agar bisa animasi lagi saat scroll ke atas
+        }
+      });
+    },
+    { threshold: 0.5 } // akan trigger saat setengah elemen terlihat
+  );
+
+  const target = document.querySelector('.animate-slide');
+  if (target) observer.observe(target);
+</script>
+
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    function typeWriter(el, text, speed = 80) {
+      el.innerHTML = ''; // Kosongkan dulu
+      let i = 0;
+
+      function typing() {
+        if (i < text.length) {
+          const char = text.charAt(i);
+          el.innerHTML += (char === '\n') ? '<br>' : char;
+          i++;
+          setTimeout(typing, speed);
+        } else {
+          el.classList.remove('typing-cursor'); // Hapus garis ketik setelah selesai
+        }
+      }
+
+      el.classList.add('typing-cursor'); // Tambahkan garis ketik
+      typing();
+    }
+
+    const target = document.getElementById('typewriter');
+const fullText = "Healthy Comfort\nin Every Slurp!.."; // teksnya di JS
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting && target.innerHTML.trim().length === 0) {
+      typeWriter(target, fullText);
+    }
+  });
+}, { threshold: 0.5 });
+
+if (target) {
+  observer.observe(target);
+}
+
+  });
+</script>
+
