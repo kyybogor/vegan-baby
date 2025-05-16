@@ -6651,7 +6651,7 @@ ol.wp-block-rss {
   margin-bottom: 30px;
 }
 
-.th-widget-about .about-logo img {
+.th-widget-about {
   height: 40px;
 }
 
@@ -22928,9 +22928,19 @@ span.select2-selection.select2-selection--single:focus {
 
 @media (max-width: 576px) {
   .custom-product-img {
-    max-width: 50px;
+    max-width: 70px;
+    aspect-ratio: 1 / 1;
+  }
+
+  .team-card-content h3 {
+    font-size: 14px;
+  }
+
+  .custom-product-card {
+    padding: 8px;
   }
 }
+
 
 .compact-navbar {
   max-width: 500px;         /* atau berapa pun kamu suka */
@@ -22942,18 +22952,25 @@ span.select2-selection.select2-selection--single:focus {
   padding: 10px 20px;
 }
 
+
+
 .custom-static-image-wrapper {
+  width: 100vw;               /* penuh lebar layar */
+  overflow: hidden;
   display: flex;
   justify-content: center;
-   padding: 0;          /* hapus padding atas bawah */
-  margin: 0;     
+  align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
 .custom-static-image {
-  width: 100%;       /* ukurannya diperkecil */
+  width: 100vw;               /* tempel kiri-kanan */
+  max-height: 85vh;           /* kecilkan tinggi */
   height: auto;
+  object-fit: cover;          /* jaga aspek rasio */
   display: block;
-  border-radius: 10px; /* opsional: biar lebih halus */
+  border-radius: 0;           /* opsional: biar rapat */
 }
 
 .header-logo a {
@@ -22965,6 +22982,37 @@ span.select2-selection.select2-selection--single:focus {
   max-width: 160px;
 }
 
+.sprinkle-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.sprinkle {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background-color: #FFD700;
+  border-radius: 50%;
+  animation: sprinkle-fall 5s linear infinite;
+  opacity: 0.8;
+}
+
+@keyframes sprinkle-fall {
+  0% {
+    transform: translateY(-10px) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) scale(0.5);
+    opacity: 0;
+  }
+}
 
 
 /*# sourceMappingURL=style.css.map */
