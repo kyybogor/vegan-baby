@@ -8384,6 +8384,7 @@ ol.wp-block-rss {
 @media (max-width: 767px) {
   .footer-default .th-widget-about {
     max-width: none;
+    
   }
 }
 
@@ -23028,6 +23029,15 @@ span.select2-selection.select2-selection--single:focus {
   }
 }
 
+@media (max-width: 768px) {
+    .widget_nav_menu {
+        margin-top: 200px; /* Memberikan jarak lebih besar dari elemen sebelumnya */
+    }
+
+    .jarak{
+      margin-top:10px;
+    }
+}
 
 
 /*# sourceMappingURL=style.css.map */
