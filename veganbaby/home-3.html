@@ -126,6 +126,8 @@
     <link rel="stylesheet" href="assets/css/style.css" />
 
     <link rel="stylesheet" href="assets/css/windsor.css" />
+
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
   </head>
 
   <body>
@@ -605,11 +607,13 @@ About Area
               <span class="sub-title after-none before-none"
                 ><i class="text-theme far fa-heart"></i> About Us</span
               >
-              <h2 class="sec-title" style="font-family: Windsor W01 Bold">
+              <h2 class="sec-title" style="font-family: Windsor W01 Bold" data-aos="fade-right" data-aos-delay="200" 
+     data-aos-duration="1500">
                 Crave-worthy noodles, consciously made<br />
                 Real ingredients. Real flavor. Real fast."
               </h2>
-              <p>
+              <p data-aos="fade-left" data-aos-delay="200" 
+     data-aos-duration="1500">
                 We’re on a mission to reinvent instant noodles—making them
                 healthier, cleaner, and 100% plant-based. Our noodles are baked,
                 not fried, made with real vegetables, and crafted without added
@@ -619,7 +623,8 @@ About Area
               </p>
             </div>
             <div class="about-wrap3 about-wrap4">
-              <p class="mb-30">
+              <p class="mb-30" data-aos="fade-right" data-aos-delay="200" 
+     data-aos-duration="1500">
                 Discover the inspiring stories of individuals and communities
                 transformed by our programs. Our success stories highlight the
                 real-life impact of your donations and the resilience of those
@@ -629,7 +634,8 @@ About Area
               
               <div class="btn-wrap mt-40">
                 <a href="about.html" class="th-btn style3 style-radius"
-                  >About More <i class="fa-solid fa-arrow-up-right ms-2"></i
+                   data-aos="fade-left" data-aos-delay="200" 
+     data-aos-duration="1500">About More <i class="fa-solid fa-arrow-up-right ms-2"></i
                 ></a>
               </div>
             </div>
@@ -692,7 +698,8 @@ Team Area
   <!-- Content Area -->
   <div class="container">
     <div class="title-area text-center">
-      <span class="sub-title after-none before-none">
+      <span class="sub-title after-none before-none" data-aos="fade-down" data-aos-delay="200" 
+     data-aos-duration="1500">
         <i class="far fa-heart text-theme"></i> Our Products
       </span>
       <h2 class="sec-title" style="font-family: Windsor W01 Bold">Our Products</h2>
@@ -1061,3 +1068,7 @@ if (target) {
   });
 </script>
 
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>

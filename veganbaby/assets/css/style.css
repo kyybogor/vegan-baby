@@ -22944,10 +22944,10 @@ span.select2-selection.select2-selection--single:focus {
 
 
 .compact-navbar {
-  max-width: 500px;         /* atau berapa pun kamu suka */
+  max-width: 500px; 
   margin-left: auto;
   margin-right: auto;
-  transform: translateX(40px);  /* geser kanan 40px, bisa kamu ubah jadi 60, 80 dst */
+  transform: translateX(40px); 
   background-color: #1c6b5a;
   border-radius: 40px;
   padding: 10px 20px;
@@ -22956,7 +22956,7 @@ span.select2-selection.select2-selection--single:focus {
 
 
 .custom-static-image-wrapper {
-  width: 100vw;               /* penuh lebar layar */
+  width: 100vw;            
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -22966,12 +22966,12 @@ span.select2-selection.select2-selection--single:focus {
 }
 
 .custom-static-image {
-  width: 100vw;               /* tempel kiri-kanan */
-  max-height: 85vh;           /* kecilkan tinggi */
+  width: 100vw;          
+  max-height: 85vh;         
   height: auto;
-  object-fit: cover;          /* jaga aspek rasio */
+  object-fit: cover;         
   display: block;
-  border-radius: 0;           /* opsional: biar rapat */
+  border-radius: 0;          
 }
 
 .header-logo a {
